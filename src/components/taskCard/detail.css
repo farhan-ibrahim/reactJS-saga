@@ -1,0 +1,57 @@
+.breadCrumb ul{
+    display: flex;
+    margin: 5px;
+}
+.breadCrumb ul li{
+    list-style-type: none;
+    margin-right: 5px;
+}
+.breadCrumb ul li a{
+    list-style-type: none;
+    margin-right: 5px;
+    color: gray
+}
+.breadCrumb ul li a{
+    list-style-type: none;
+    margin-right: 5px;
+    color: gray
+}
+.detailContainer{
+    margin: 10px 10px 0;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.detailHeader{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+.textHolder{
+    margin-bottom: 10px;
+}
+.descHolder{
+    height: 100px;
+}
+.btnHolder{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 100px;
+}
+.updateContainer{
+    padding: 10px;
+}
+.statusBox{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 3px solid peru;
+    border-radius: 5px;
+}

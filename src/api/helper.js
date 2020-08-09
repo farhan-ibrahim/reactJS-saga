@@ -1,23 +1,17 @@
 import axios from "axios";
 
 export const configureInterceptor = () => {};
-const baseToken = "716cdcf6-84d3-4aa0-8f3c-8c81f24621db";
+// const baseToken = "716cdcf6-84d3-4aa0-8f3c-8c81f24621db";
 
 export const getHeader = () => {
   return {
     "Content-Type": "multipart/form-data",
-    "X-API-VERSION": "1.4.24",
-    exchangeId: 2,
-    language: "en",
-    "X-API-VERSION": "1.4.24",
-    exchangeId: "2",
-    language: "en",
-    source: "2"
+    Accept : "application/json",
   };
 };
 
 const getFullUrl = endpoint => {
-  return "http://api.orionex.cc/" + endpoint;
+  return "http://localhost:8000/" + endpoint;
 };
 
 const fetchApi = (method, endpoint, params, headers) =>

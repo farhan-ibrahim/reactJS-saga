@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+    height: 486px;
+    text-align: left;
+    position: relative;
+}
+.taskHolder{
+    padding: 10px;
+    height: 426px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.navBar{
+    width: 100%;
+    height: 30px;
+    list-style-type:none;
+    display: flex;
+}
+.navBar li{
+    width: calc(100% / 3);
+    border-top-right-radius:10px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    text-align: center;
+    line-height: 30px;
+}
+.navBar li a{
+    text-decoration: none;
+    color:black;  
+}
+.navBar li:hover{
+    background-color: peru;
+}
+.navBar li a:hover{
+    color:white;
+}

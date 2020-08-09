@@ -1,8 +1,8 @@
 import { createLogger } from "redux-logger";
 import { createStore, applyMiddleware } from "redux";
 import { persistStore, persistCombineReducers } from "redux-persist";
-// import storage from 'redux-persist/lib/storage';
-import AsyncStorage from "@react-native-community/async-storage";
+import storage from 'redux-persist/lib/storage';
+// import AsyncStorage from "@react-native-community/async-storage";
 import createSagaMiddleware from "redux-saga";
 
 import reducers from "../reducers/index";
@@ -13,15 +13,15 @@ const sagaMiddleware = createSagaMiddleware();
 
 const config = {
   key: "root",
-  storage: AsyncStorage,
-  // storage,
+  //storage: AsyncStorage,
+  storage,
   whitelist: ["PROFILE"]
 };
 
 const reducer = persistCombineReducers(config, reducers);
 
 /* global __DEV__ */
-if (__DEV__) {
+if (process.env.NODE_ENV === "development") {
   const excludedActions = [];
   const logger = createLogger({
     collapsed: true,

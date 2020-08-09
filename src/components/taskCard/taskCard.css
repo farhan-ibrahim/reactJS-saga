@@ -1,0 +1,21 @@
+.taskCard{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+}
+.taskCard input{
+    width:10px;
+    height: 10px;
+    margin: 0;
+}
+.taskCardInfoHolder{
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    padding: 10px;
+    width: 200px;
+}
+
+.taskCard:hover{
+    transform: scaleY(1.1);
+    background-color: peru;
+    color: white;
+}
